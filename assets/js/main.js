@@ -63,7 +63,7 @@ sr.reveal('.familiar__subtitle',{interval:200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 50}); 
 var typed = new Typed(".typing",{
-  strings: ["Data Analyst","Data Engineer"," Dot Net Developer","Quick Learner","Solution-Oriented"],
+  strings: ["Data Scientis","Data Analyst","Data Engineer","Quick Learner","Solution-Oriented"],
   typeSpeed: 100,
   backSpeed: 70,
   loop: true

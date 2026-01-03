@@ -3,13 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Adarsh Singh Dikhit - Data Scientist with 1.7+ years experience in Python, Machine Learning, Deep Learning, MLOPs, and AWS">
+        <meta name="keywords" content="Data Scientist, Machine Learning, Deep Learning, Python, MLOPs, AWS, Portfolio">
+        <meta name="author" content="Adarsh Singh Dikhit">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/logo.png">
+        
         <link rel="stylesheet" href="assets/css/styles.css">
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-        <title>Adarsh Singh Dikhit Portfolio</title>
+        
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <title>Adarsh Singh Dikhit - Data Scientist & ML Engineer Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -26,6 +36,9 @@
                         <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#data-engineering" class="nav__link">Data Engineering</a></li>
+                        <li class="nav__item"><a href="#llm-projects" class="nav__link">LLM Projects</a></li>
+                        <li class="nav__item"><a href="#blog" class="nav__link">Blog & Articles</a></li>
                         <li class="nav__item"><a href="#Certificate" class="nav__link">Achievement</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -40,78 +53,183 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Adarsh singh</span><br><span class="home__title-color"><span class="typing"></span></span></h1>
-
-                    <a href="assets/img/Adarsh_singh_resume.docx" class="button" >Resume</a>
+                <div class="home__data" data-aos="fade-right">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Adarsh Singh</span><br><span class="home__title-color"><span class="typing"></span></span></h1>
+                    <p class="home__description">Senior AI/ML Engineer with 4.9+ years of experience in dynamic startup environments, specializing in LLMs, RAG systems, and production-scale AI solutions.</p>
                     
+                    <div class="home__buttons">
+                        <a href="assets/img/Adarsh_singh_resume.docx" class="button button--primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="button button--secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/adarshsinghdikhit/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/adarsh-dikhit" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                <div class="home__social" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.linkedin.com/in/adarshsinghdikhit/" class="home__social-icon" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/adarsh-dikhit" class="home__social-icon" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto:adarsh@example.com" class="home__social-icon" title="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
                 </div>
 
-                <div class="home__img">    
-                    <img src="assets/img/adarsh1.jpeg" alt="">
+                <div class="home__img" data-aos="fade-left" data-aos-delay="400">    
+                    <div class="home__blob">
+                        <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/adarsh1.jpeg"/>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </section>
 
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+            <section class="about section" id="about">
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
 
                 <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/my.jpeg" alt="">
+                    <div class="about__img" data-aos="fade-right">
+                        <img src="assets/img/my.jpeg" alt="Adarsh Singh">
                     </div>
                     
-                    <div>
-                        <h2 class="about__subtitle">Hey, I'am <span class="home__title-color">Adarsh</span></h2>
-                        <p class="about__text">Data Scientist with <b>1.7 years</b> of experience on Python, Machine Learning, Deep Learning, NLP, MLOPs, WebRTC, TensorFlow, Flask REST API, Django, AWS, Docker, MySQL.  Proven team player focused on achieving project objectives with speed and accuracy and working effectively in dynamic environments.   
+                    <div data-aos="fade-left">
+                        <h2 class="about__subtitle">Hey, I'm <span class="home__title-color">Adarsh</span></h2>
+                        <p class="about__text">
+                            Senior AI/ML Engineer with <strong>4.9+ years</strong> of hands-on experience in dynamic startup environments. 
+                            I specialize in AI/ML, data migration, and analytics with deep expertise in supervised, unsupervised, and reinforcement learning.
+                        </p>
+                        <p class="about__text">
+                            My core expertise includes Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and agentic AI systems. 
+                            I excel in developing comprehensive LLM-based solutions including RAG pipelines, agentic QA models, semantic search, 
+                            speech-to-text, computer vision, and advanced prompt engineering with vector databases and multi-agent orchestration.
+                        </p>
+                        <p class="about__text">
+                            Experienced in production deployments, AI software architecture design, and enterprise cloud solutions with AWS. 
+                            Proficient in system integration, client engagement, and managing the full software development lifecycle in agile environments.
+                        </p>
+                        
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <span class="about__stat-number">4.9+</span>
+                                <span class="about__stat-text">Years Experience</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">50+</span>
+                                <span class="about__stat-text">Projects Delivered</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">15+</span>
+                                <span class="about__stat-text">Technologies Mastered</span>
+                            </div>
+                        </div>
                     </div>                                   
                 </div>
             </section>
 
             <!--===== Experience =====-->
-
-            <section class="experience" id="experience">
-                <h2 class ="section-title">Experience</h2>
+            <section class="experience section" id="experience">
+                <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
                 <div class="education__container bd-grid">
                     <div>
-                        <div class="education__data">
+                        <div class="education__data" data-aos="fade-up" data-aos-delay="100">
                             <div class="q1">
                                 <div>
-                                    <a href="" class="qualif__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                                    <a href="" class="qualif__icon"><i class="fas fa-crown" aria-hidden="true"></i></a>
                                 </div>
                                 <div>
-                                    <h2 class="qualif__subtitle">Associate Data Scientist (Examroom.AI)</h2>
-                                    <p class="qualif__text">Bengaluru, Karnataka</p>
-                                    <br>
-                                    <p class="qualif__text">April 2021 - Present</p>
+                                    <h2 class="qualif__subtitle">AI/ML Module Lead</h2>
+                                    <p class="qualif__company">ExamRoom.AI®</p>
+                                    <p class="qualif__text">Bengaluru, Karnataka, India</p>
+                                    <p class="qualif__text">April 2023 - Present (2 yrs 10 mos)</p>
+                                    <div class="qualif__achievements">
+                                        <h4 class="achievement__title">🚀 Products Delivered:</h4>
+                                        <ul class="qualif__responsibilities">
+                                            <li><strong>Onboarding AI System:</strong> Architected multi-modal biometric verification platform with 99.5% accuracy</li>
+                                            <li><strong>Proctoring AI System:</strong> Built real-time object detection with YOLO-V5, achieving 20ms streaming latency</li>
+                                            <li><strong>Assessment AI System:</strong> Developed RAG-based agentic QA system producing 10,000+ quality assessments</li>
+                                            <li>Reduced exam violations by 85% and onboarding time by 70% through intelligent AI systems</li>
+                                        </ul>
+                                        <h4 class="achievement__title">💡 Technical Leadership:</h4>
+                                        <ul class="qualif__responsibilities">
+                                            <li>Lead cross-functional team of 5+ AI/ML engineers in agile development</li>
+                                            <li>Architected MLOps pipelines on AWS with 99%+ uptime</li>
+                                            <li>Reduced model inference latency by 60% through distributed computing optimization</li>
+                                            <li>Integrated enterprise platforms: Truefoundry, Tableau, ThoughtSpot, Zoho, ERPNext</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div>              
-                                <img src="assets/img/examroom.jpg" alt="" class="skills__img">
+                                <img src="assets/img/examroom.jpg" alt="ExamRoom.AI" class="skills__img">
                             </div>
                         </div>
-                        <div class="education__data">
+                        
+                        <div class="education__data" data-aos="fade-up" data-aos-delay="200">
                             <div class="q2">
                                 <div>
-                                    <a href="" class="qualif__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                                    <a href="" class="qualif__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></a>
                                 </div>
                                 <div>
-                                    <h2 class="qualif__subtitle">Intern AI/ML (TCS)</h2>
-                                    <p class="qualif__text">May 2020 - July 2020</p>
-                                    <br>
-                                    <p class="qualif__text">Pune, Maharashtra </p>
+                                    <h2 class="qualif__subtitle">Associate Data Scientist</h2>
+                                    <p class="qualif__company">ExamRoom.AI®</p>
+                                    <p class="qualif__text">Bengaluru, Karnataka, India</p>
+                                    <p class="qualif__text">April 2021 - April 2023 (2 yrs 1 mo)</p>
+                                    <div class="qualif__achievements">
+                                        <h4 class="achievement__title">🎯 Key Projects Delivered (12+ Projects):</h4>
+                                        <ul class="qualif__responsibilities">
+                                            <li><strong>Biometric Systems:</strong> Photo ID Verification, Face Verification, Voice Biometrics, Face Movement Verification</li>
+                                            <li><strong>Computer Vision:</strong> Object Detection, Medical Image Recommendation, Image Similarity Analysis, Mouth Opening Detection</li>
+                                            <li><strong>NLP Solutions:</strong> Item Generation, Translation Models, Next Word Prediction, Abhorrent Expression Detection</li>
+                                            <li>Delivered innovative technologies addressing complex challenges across diverse AI domains</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <div>              
-                                <img src="assets/img/tcs.png" alt="" class="skills__img">
+                                <img src="assets/img/examroom.jpg" alt="ExamRoom.AI" class="skills__img">
                             </div>
                         </div>
+                        
+                        <div class="education__data" data-aos="fade-up" data-aos-delay="300">
+                            <div class="q2">
+                                <div>
+                                    <a href="" class="qualif__icon"><i class="fas fa-user-graduate" aria-hidden="true"></i></a>
+                                </div>
+                                <div>
+                                    <h2 class="qualif__subtitle">AI/ML Intern</h2>
+                                    <p class="qualif__company">Tata Consultancy Services (TCS)</p>
+                                    <p class="qualif__text">May 2020 - July 2020</p>
+                                    <p class="qualif__text">Pune, Maharashtra</p>
+                                    <ul class="qualif__responsibilities">
+                                        <li>Worked on computer vision and NLP projects</li>
+                                        <li>Gained hands-on experience with TensorFlow and PyTorch</li>
+                                        <li>Collaborated with senior data scientists on real-world problems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>              
+                                <img src="assets/img/tcs.png" alt="TCS" class="skills__img">
+                            </div>
                         </div>
+                    </div>
+                </div>
             </section>
 
             <!--Education Section-->
@@ -166,45 +284,9 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Python</span>
+                                <span class="skills__name">LLMs & RAG Systems</span>
                             </div>
                             <div class="skills__bar skills__dsa">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Machine Learning</span>
-                            </div>
-                            <div class="skills__bar skills__java">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Deep Learning</span>
-                            </div>
-                            <div class="skills__bar skills__cpp">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon' ></i>
-                                <span class="skills__name">MLOPs</span>
-                            </div>
-                            <div class="skills__bar skills__kotlin">
                                 
                             </div>
                             <div>
@@ -214,7 +296,43 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Docker</span>
+                                <span class="skills__name">Machine Learning & AI</span>
+                            </div>
+                            <div class="skills__bar skills__java">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Computer Vision & NLP</span>
+                            </div>
+                            <div class="skills__bar skills__cpp">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">88%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon' ></i>
+                                <span class="skills__name">AWS & Cloud Architecture</span>
+                            </div>
+                            <div class="skills__bar skills__kotlin">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">92%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">MLOps & Production Deployment</span>
                             </div>
                             <div class="skills__bar skills__os">
                                 
@@ -227,13 +345,13 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Flask, Django</span>
+                                <span class="skills__name">Python & Advanced Frameworks</span>
                             </div>
                             <div class="skills__bar skills__oops">
                                 
                             </div>
                             <div>
-                                <span class="skills__percentage">75%</span>
+                                <span class="skills__percentage">93%</span>
                             </div>
                         </div>
 
@@ -246,60 +364,773 @@
             </section>
             <!--familiar section-->
             <section class="familiar section" id="familiar">
-                <h3 class="section-title">Familiar With</h3>
-                <div class="work__container bd-grid">          
-                    <div class="familiar_cont">
-                        <img src="assets/img/python.png" alt=""  class="familiar__img" width="100px" height="100px">
-                        <h2 class="familiar__subtitle">Python</h2>
+                <h3 class="section-title" data-aos="fade-up">Technical Expertise</h3>
+                <div class="expertise__container bd-grid">
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-robot"></i>
+                            AI/ML & LLMs
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">Large Language Models</span>
+                            <span class="expertise__skill">RAG Systems</span>
+                            <span class="expertise__skill">Agentic AI</span>
+                            <span class="expertise__skill">Prompt Engineering</span>
+                            <span class="expertise__skill">Vector Databases</span>
+                            <span class="expertise__skill">Multi-Agent Orchestration</span>
+                            <span class="expertise__skill">Reinforcement Learning</span>
+                            <span class="expertise__skill">Ensemble Modeling</span>
+                        </div>
                     </div>
-                    <div class="familiar_cont">
-                        <img src="assets/img/deep.jpg" alt=""  class="familiar__img" width="100px" height="100px">
-                        <h2 class="familiar__subtitle">Deep Learning</h2>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-eye"></i>
+                            Computer Vision & NLP
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">Object Detection</span>
+                            <span class="expertise__skill">Semantic Segmentation</span>
+                            <span class="expertise__skill">Image Classification</span>
+                            <span class="expertise__skill">Object Tracking</span>
+                            <span class="expertise__skill">Speech-to-Text</span>
+                            <span class="expertise__skill">Semantic Search</span>
+                            <span class="expertise__skill">Translation Models</span>
+                            <span class="expertise__skill">Image Processing</span>
+                        </div>
                     </div>
-                    <div class="familiar_cont">
-                        <img src="assets/img/machine.png" alt=""  class="familiar__img" width="80px" height="80px">
-                        <h2 class="familiar__subtitle">ML </h2>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-cloud"></i>
+                            AWS & Cloud Infrastructure
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">EC2 & ECS/EKS</span>
+                            <span class="expertise__skill">SageMaker Studio</span>
+                            <span class="expertise__skill">S3 & ECR</span>
+                            <span class="expertise__skill">Lambda & DynamoDB</span>
+                            <span class="expertise__skill">VPC & Load Balancer</span>
+                            <span class="expertise__skill">IAM & Secret Manager</span>
+                            <span class="expertise__skill">Code Pipeline</span>
+                            <span class="expertise__skill">Container Registry</span>
+                        </div>
                     </div>
-                    <div class="familiar_cont">
-                        <img src="assets/img/ds.png" alt=""  class="familiar__img" width="80px" height="80px">
-                        <h2 class="familiar__subtitle">Data Structure </h2>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="400">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-cogs"></i>
+                            Development & Deployment
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">FastAPI & gRPC</span>
+                            <span class="expertise__skill">Docker & Kubernetes</span>
+                            <span class="expertise__skill">Model Deployment</span>
+                            <span class="expertise__skill">API Aggregation</span>
+                            <span class="expertise__skill">Distributed Training</span>
+                            <span class="expertise__skill">Hyperparameter Tuning</span>
+                            <span class="expertise__skill">Model Fine-tuning</span>
+                            <span class="expertise__skill">System Integration</span>
+                        </div>
                     </div>
-                    <div class="familiar_cont">
-                        <img src="assets/img/docker.png" alt=""  class="familiar__img" width="80px" height="80px">
-                        <h2 class="familiar__subtitle">Docker </h2>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="450">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-database"></i>
+                            Data Engineering Tools
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">Apache Trino</span>
+                            <span class="expertise__skill">Apache Airflow</span>
+                            <span class="expertise__skill">Apache Superset</span>
+                            <span class="expertise__skill">Apache Kafka</span>
+                            <span class="expertise__skill">Data Pipeline Design</span>
+                            <span class="expertise__skill">ETL/ELT Processes</span>
+                            <span class="expertise__skill">Data Quality Management</span>
+                            <span class="expertise__skill">Agentic AI Integration</span>
+                        </div>
                     </div>
-                    <div class="familiar_cont">
-                        <img src="assets/img/aws.png" alt=""  class="familiar__img" width="80px" height="80px">
-                        <h2 class="familiar__subtitle">AWS Service </h2>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="500">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-microchip"></i>
+                            Hardware & Computing
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">NVIDIA GPUs (A100, V100, RTX)</span>
+                            <span class="expertise__skill">Intel 8480+ Systems</span>
+                            <span class="expertise__skill">Parallel Computing</span>
+                            <span class="expertise__skill">Distributed Computing</span>
+                            <span class="expertise__skill">Remote Servers</span>
+                            <span class="expertise__skill">Multiprocessing</span>
+                        </div>
+                    </div>
+
+                    <div class="expertise__category" data-aos="fade-up" data-aos-delay="550">
+                        <h4 class="expertise__title">
+                            <i class="fas fa-project-diagram"></i>
+                            Business & Management
+                        </h4>
+                        <div class="expertise__skills">
+                            <span class="expertise__skill">Project Estimation</span>
+                            <span class="expertise__skill">Client Engagement</span>
+                            <span class="expertise__skill">Resource Allocation</span>
+                            <span class="expertise__skill">System Design</span>
+                            <span class="expertise__skill">Agile Methodologies</span>
+                            <span class="expertise__skill">SDLC Management</span>
+                            <span class="expertise__skill">ThoughtSpot Integration</span>
+                            <span class="expertise__skill">ERPNext Systems</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Personal Projects</h2>
+                <h2 class="section-title" data-aos="fade-up">Enterprise AI Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="https://github.com/adarsh-dikhit/Digit-Classification">
-                    <div class="work__img">
-                        <img src="assets/img/digit.png" alt="">
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="work__img">
+                            <img src="assets/img/digit.png" alt="RAG Agentic QA">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>RAG-Based Agentic QA Model</h3>
+                                    <p>Advanced RAG architecture with multi-agent system for intelligent assessment using vector databases and LLM integration</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">LangChain</span>
+                                        <span class="work__tag">Vector DB</span>
+                                        <span class="work__tag">GPT-4</span>
+                                        <span class="work__tag">AWS EKS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://www.linkedin.com/pulse/what-retrieval-augmented-generation-rag-systems-adarsh-singh-dikhit-cilcc/" class="work__link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Article
+                            </a>
+                        </div>
                     </div>
-                    </a>
-                    <a href="https://github.com/adarsh-dikhit/Mining-Association-Rules-Market-Basket-Analysis">
-                    <div class="work__img">
-                        <img src="assets/img/basket.png" alt="">
-                    </div>
-                    </a>
-                    <a href="https://github.com/adarsh-dikhit/Automate-identification-and-recognition-of-handwritten-text-from-an-image">
-                    <div class="work__img">
-                        <img src="assets/img/ocr.png" alt="">
-                    </div>
-                    </a>  
-                    <div> <h2 class="section-title">Organizational Projects</h2></div>
 
-                    
-                    
-                   
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work__img">
+                            <img src="assets/img/basket.png" alt="LLM Item Generation">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>LLM-Based Item Generation</h3>
+                                    <p>Advanced NLP with Mistral for generating contextual questions with customizable types and educational platform integration</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">Mistral LLM</span>
+                                        <span class="work__tag">NLP</span>
+                                        <span class="work__tag">SageMaker</span>
+                                        <span class="work__tag">EKS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="work__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="work__img">
+                            <img src="assets/img/ocr.png" alt="LLaMA Translation">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>LLaMA 2 Translation System</h3>
+                                    <p>Context-aware translation system with broad language coverage and real-time interaction capabilities</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">LLaMA 2</span>
+                                        <span class="work__tag">Translation</span>
+                                        <span class="work__tag">Real-time</span>
+                                        <span class="work__tag">NLP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="work__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="work__img">
+                            <img src="assets/img/deep.jpg" alt="Object Detection Proctoring">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>Object Detection for Remote Proctoring</h3>
+                                    <p>Enhanced object detection using YOLO-V5 with fine-tuned models and client-side deployment via React JS</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">YOLO-V5</span>
+                                        <span class="work__tag">PyTorch</span>
+                                        <span class="work__tag">React JS</span>
+                                        <span class="work__tag">Computer Vision</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="work__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="work__img">
+                            <img src="assets/img/machine.png" alt="Medical Recommendation">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>Medical Recommendation System</h3>
+                                    <p>BERT-based recommendation system using Transformer architectures with Flax and Jax deployment</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">BERT</span>
+                                        <span class="work__tag">Transformers</span>
+                                        <span class="work__tag">Streamlit</span>
+                                        <span class="work__tag">Healthcare</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="work__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work__card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="work__img">
+                            <img src="assets/img/python.png" alt="Speaker Verification">
+                            <div class="work__overlay">
+                                <div class="work__info">
+                                    <h3>Speaker Verification System</h3>
+                                    <p>CNN and RNN-based speaker verification with Dynamic Time Warping and SVM techniques using ResNet architecture</p>
+                                    <div class="work__tags">
+                                        <span class="work__tag">CNN/RNN</span>
+                                        <span class="work__tag">ResNet</span>
+                                        <span class="work__tag">Docker</span>
+                                        <span class="work__tag">Audio Processing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__links">
+                            <a href="https://github.com/adarsh-dikhit" class="work__link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="work__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__more" data-aos="fade-up" data-aos-delay="700">
+                    <a href="https://github.com/adarsh-dikhit" class="button button--secondary" target="_blank">
+                        <i class="fab fa-github"></i> View All Projects
+                    </a>
+                </div>
+            </section>
+
+            <!--===== DATA ENGINEERING TOOLS =====-->
+            <section class="data-engineering section" id="data-engineering">
+                <h2 class="section-title" data-aos="fade-up">Data Engineering & Analytics Tools</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                    Built from scratch and customized enterprise-grade data engineering solutions with agentic AI integration
+                </p>
+
+                <div class="data-eng__container bd-grid">
+                    <div class="data-eng__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="data-eng__header">
+                            <div class="data-eng__icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="data-eng__title">Trino Query Engine</h3>
+                            <span class="data-eng__badge">Built from Scratch</span>
+                        </div>
+                        <p class="data-eng__description">
+                            Architected and implemented distributed SQL query engine from ground up with custom optimizations for 
+                            petabyte-scale data processing across multiple data sources.
+                        </p>
+                        <div class="data-eng__features">
+                            <h4 class="features__title">Key Implementations:</h4>
+                            <ul class="features__list">
+                                <li>Custom connector development for proprietary data sources</li>
+                                <li>Query optimization algorithms reducing execution time by 40%</li>
+                                <li>Agentic AI integration for intelligent query planning and optimization</li>
+                                <li>Real-time monitoring and auto-scaling capabilities</li>
+                                <li>Multi-tenant security with role-based access control</li>
+                            </ul>
+                        </div>
+                        <div class="data-eng__tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Distributed Systems</span>
+                            <span class="tech-tag">SQL Optimization</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <div class="data-eng__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="data-eng__header">
+                            <div class="data-eng__icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="data-eng__title">Apache Airflow Orchestration</h3>
+                            <span class="data-eng__badge">Custom Implementation</span>
+                        </div>
+                        <p class="data-eng__description">
+                            Developed comprehensive workflow orchestration platform with advanced scheduling, monitoring, 
+                            and agentic AI-powered pipeline optimization capabilities.
+                        </p>
+                        <div class="data-eng__features">
+                            <h4 class="features__title">Advanced Features:</h4>
+                            <ul class="features__list">
+                                <li>Custom operators for ML model training and deployment</li>
+                                <li>Intelligent failure recovery with AI-driven root cause analysis</li>
+                                <li>Dynamic DAG generation based on data patterns</li>
+                                <li>Real-time pipeline monitoring with predictive alerting</li>
+                                <li>Integration with 15+ data sources and ML platforms</li>
+                            </ul>
+                        </div>
+                        <div class="data-eng__tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="data-eng__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="data-eng__header">
+                            <div class="data-eng__icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="data-eng__title">Apache Superset Analytics</h3>
+                            <span class="data-eng__badge">Heavily Customized</span>
+                        </div>
+                        <p class="data-eng__description">
+                            Built enterprise-ready business intelligence platform with custom visualizations, 
+                            AI-powered insights, and advanced security features.
+                        </p>
+                        <div class="data-eng__features">
+                            <h4 class="features__title">Custom Enhancements:</h4>
+                            <ul class="features__list">
+                                <li>AI-powered automated insight generation and anomaly detection</li>
+                                <li>Custom visualization components for domain-specific metrics</li>
+                                <li>Advanced caching layer reducing dashboard load time by 70%</li>
+                                <li>Multi-tenant architecture with white-label capabilities</li>
+                                <li>Real-time streaming data integration with Apache Kafka</li>
+                            </ul>
+                        </div>
+                        <div class="data-eng__tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python Flask</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Apache Kafka</span>
+                        </div>
+                    </div>
+
+                    <div class="data-eng__card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="data-eng__header">
+                            <div class="data-eng__icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="data-eng__title">Agentic AI Data Platform</h3>
+                            <span class="data-eng__badge">Innovation Project</span>
+                        </div>
+                        <p class="data-eng__description">
+                            Pioneered integration of agentic AI systems across the entire data engineering stack, 
+                            creating autonomous data processing and optimization capabilities.
+                        </p>
+                        <div class="data-eng__features">
+                            <h4 class="features__title">AI Integration Features:</h4>
+                            <ul class="features__list">
+                                <li>Autonomous data quality monitoring and correction agents</li>
+                                <li>Intelligent resource allocation and cost optimization</li>
+                                <li>Self-healing pipeline architecture with predictive maintenance</li>
+                                <li>Natural language query interface for business users</li>
+                                <li>Automated schema evolution and data lineage tracking</li>
+                            </ul>
+                        </div>
+                        <div class="data-eng__tech">
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Multi-Agent Systems</span>
+                            <span class="tech-tag">MLOps</span>
+                            <span class="tech-tag">Vector Databases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-eng__stats" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat__item">
+                        <span class="stat__number">15+</span>
+                        <span class="stat__label">Data Sources Integrated</span>
+                    </div>
+                    <div class="stat__item">
+                        <span class="stat__number">10TB+</span>
+                        <span class="stat__label">Daily Data Processed</span>
+                    </div>
+                    <div class="stat__item">
+                        <span class="stat__number">99.9%</span>
+                        <span class="stat__label">Pipeline Uptime</span>
+                    </div>
+                    <div class="stat__item">
+                        <span class="stat__number">60%</span>
+                        <span class="stat__label">Performance Improvement</span>
+                    </div>
+                </div>
+
+                <div class="data-eng__cta" data-aos="fade-up" data-aos-delay="600">
+                    <a href="https://github.com/adarsh-dikhit" class="button button--primary" target="_blank">
+                        <i class="fab fa-github"></i> View Data Engineering Projects
+                    </a>
+                    <a href="https://medium.com/@to.adarshsingh/agentic-ai-for-data-engineering-12ef9fafea6d" class="button button--secondary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Read Technical Article
+                    </a>
+                </div>
+            </section>
+
+            <!--===== ADDITIONAL PROJECTS =====-->
+            <section class="additional-projects section" id="additional-projects">
+                <h2 class="section-title" data-aos="fade-up">Additional AI Solutions</h2>
+                
+                <div class="additional__container bd-grid">
+                    <div class="additional__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="additional__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="additional__title">Next Word Prediction</h3>
+                        <p class="additional__description">
+                            LSTM and Dense Layer-based predictive model deployed using Django framework for real-time text prediction
+                        </p>
+                        <div class="additional__tech">
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">Dense Layer</span>
+                            <span class="tech-tag">Django</span>
+                        </div>
+                    </div>
+
+                    <div class="additional__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="additional__icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3 class="additional__title">Identity Verification System</h3>
+                        <p class="additional__description">
+                            OCR-based identity verification using Tesseract engine with Levenshtein Distance for accurate test taker validation
+                        </p>
+                        <div class="additional__tech">
+                            <span class="tech-tag">OCR</span>
+                            <span class="tech-tag">Tesseract</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== LLM PROJECTS =====-->
+            <section class="llm-projects section" id="llm-projects">
+                <h2 class="section-title" data-aos="fade-up">LLM & Generative AI Projects</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                    Exploring the frontiers of Large Language Models and Generative AI
+                </p>
+
+                <div class="llm__container bd-grid">
+                    <div class="llm__card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="llm__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="llm__title">RAG System Implementation</h3>
+                        <p class="llm__description">
+                            Built production-ready Retrieval-Augmented Generation systems with custom knowledge bases, 
+                            implementing advanced retrieval strategies and vector databases for enhanced AI responses.
+                        </p>
+                        <div class="llm__tech">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Vector DB</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                        <div class="llm__links">
+                            <a href="https://github.com/adarsh-dikhit" class="llm__link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://www.linkedin.com/pulse/what-retrieval-augmented-generation-rag-systems-adarsh-singh-dikhit-cilcc/" class="llm__link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Article
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="llm__card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="llm__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="llm__title">LoRA/QLoRA Fine-tuning Pipeline</h3>
+                        <p class="llm__description">
+                            Developed parameter-efficient fine-tuning pipelines using LoRA and QLoRA techniques 
+                            for domain-specific language model adaptation with minimal computational resources.
+                        </p>
+                        <div class="llm__tech">
+                            <span class="tech-tag">LoRA</span>
+                            <span class="tech-tag">QLoRA</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <div class="llm__links">
+                            <a href="https://github.com/adarsh-dikhit" class="llm__link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://medium.com/@to.adarshsingh/lora-vs-qlora-a-comprehensive-comparison-ff12117d669b" class="llm__link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Article
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="llm__card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="llm__icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="llm__title">Agentic AI Data Engineering</h3>
+                        <p class="llm__description">
+                            Implemented agentic AI workflows for automated data engineering tasks, 
+                            including QA processes and intelligent data pipeline management systems.
+                        </p>
+                        <div class="llm__tech">
+                            <span class="tech-tag">Agentic AI</span>
+                            <span class="tech-tag">Data Engineering</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">MLOps</span>
+                        </div>
+                        <div class="llm__links">
+                            <a href="https://github.com/adarsh-dikhit" class="llm__link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://medium.com/@to.adarshsingh/agentic-ai-for-data-engineering-12ef9fafea6d" class="llm__link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Article
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== BLOG & ARTICLES =====-->
+            <section class="blog section" id="blog">
+                <h2 class="section-title" data-aos="fade-up">Blog & Articles</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                    Sharing insights and knowledge through technical writing
+                </p>
+
+                <div class="blog__container bd-grid">
+                    <div class="blog__category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog__header">
+                            <i class="fab fa-medium blog__platform-icon"></i>
+                            <h3 class="blog__platform">Medium Articles</h3>
+                        </div>
+                        
+                        <div class="blog__articles">
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">8 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://medium.com/@to.adarshsingh/lora-vs-qlora-a-comprehensive-comparison-ff12117d669b" target="_blank">LoRA vs QLoRA: A Comprehensive Comparison</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Deep dive into parameter-efficient fine-tuning techniques for large language models, comparing LoRA and QLoRA approaches...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">LoRA</span>
+                                    <span class="blog__tag">QLoRA</span>
+                                    <span class="blog__tag">Fine-tuning</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">12 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://medium.com/@to.adarshsingh/rath-next-generation-automated-data-analysis-tool-architecture-and-aws-deployment-with-helm-a05c00909fd6" target="_blank">RATH: Next-Generation Automated Data Analysis Tool — Architecture and AWS Deployment with Helm</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Comprehensive guide to deploying RATH, an automated data analysis tool, on AWS infrastructure using Helm charts...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">RATH</span>
+                                    <span class="blog__tag">AWS</span>
+                                    <span class="blog__tag">Helm</span>
+                                    <span class="blog__tag">Data Analysis</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">10 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://medium.com/@to.adarshsingh/agentic-ai-for-data-engineering-12ef9fafea6d" target="_blank">Agentic AI for Data Engineering</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Exploring how agentic AI systems are revolutionizing data engineering workflows and automation processes...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">Agentic AI</span>
+                                    <span class="blog__tag">Data Engineering</span>
+                                    <span class="blog__tag">Automation</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">7 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://medium.com/@to.adarshsingh/qa-agentic-flow-series-1-3e76a581ec0a" target="_blank">QA Agentic Flow — Series</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    First part of a comprehensive series on Quality Assurance using agentic workflows and AI-driven testing approaches...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">QA</span>
+                                    <span class="blog__tag">Agentic Flow</span>
+                                    <span class="blog__tag">Testing</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">9 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://medium.com/@to.adarshsingh/rag-and-kag-modern-approaches-to-enhanced-ai-generation-13cd484d1c1b" target="_blank">RAG and KAG: Modern Approaches to Enhanced AI Generation</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Comprehensive comparison of Retrieval-Augmented Generation (RAG) and Knowledge-Augmented Generation (KAG) techniques...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">RAG</span>
+                                    <span class="blog__tag">KAG</span>
+                                    <span class="blog__tag">AI Generation</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="blog__category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog__header">
+                            <i class="fab fa-linkedin blog__platform-icon"></i>
+                            <h3 class="blog__platform">LinkedIn Articles</h3>
+                        </div>
+                        
+                        <div class="blog__articles">
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">6 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://www.linkedin.com/pulse/what-retrieval-augmented-generation-rag-systems-adarsh-singh-dikhit-cilcc/?trackingId=mIEkMGeGSgqZSjU8wro%2F3Q%3D%3D" target="_blank">What are Retrieval Augmented Generation (RAG) Systems?</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Comprehensive overview of RAG systems, their architecture, and practical applications in modern AI solutions...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">RAG</span>
+                                    <span class="blog__tag">LLM</span>
+                                    <span class="blog__tag">AI Systems</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">8 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://www.linkedin.com/pulse/automating-aws-infrastructure-boosting-efficiency-manual-dikhit-i29cc/?trackingId=mIEkMGeGSgqZSjU8wro%2F3Q%3D%3D" target="_blank">Automating AWS Infrastructure: Boosting Efficiency and Eliminating Manual Deployment Challenges</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Strategies and best practices for automating AWS infrastructure deployment to improve efficiency and reduce manual errors...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">AWS</span>
+                                    <span class="blog__tag">Infrastructure</span>
+                                    <span class="blog__tag">Automation</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">7 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://www.linkedin.com/pulse/mistral-model-high-level-architecture-deployment-structure-dikhit-pvbic/?trackingId=mIEkMGeGSgqZSjU8wro%2F3Q%3D%3D" target="_blank">Mistral Model High-Level Architecture and Deployment Structure</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Deep dive into Mistral AI's model architecture and practical deployment strategies for production environments...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">Mistral AI</span>
+                                    <span class="blog__tag">Architecture</span>
+                                    <span class="blog__tag">Deployment</span>
+                                </div>
+                            </article>
+
+                            <article class="blog__article">
+                                <div class="blog__article-meta">
+                                    <span class="blog__date">Recent</span>
+                                    <span class="blog__read-time">9 min read</span>
+                                </div>
+                                <h4 class="blog__article-title">
+                                    <a href="https://www.linkedin.com/pulse/understanding-langchain-framework-building-complex-llm-dikhit-kp2tc/?trackingId=mIEkMGeGSgqZSjU8wro%2F3Q%3D%3D" target="_blank">Understanding LangChain: A Framework for Building Complex LLM Applications</a>
+                                </h4>
+                                <p class="blog__article-excerpt">
+                                    Complete guide to LangChain framework, its components, and how to build sophisticated LLM-powered applications...
+                                </p>
+                                <div class="blog__tags">
+                                    <span class="blog__tag">LangChain</span>
+                                    <span class="blog__tag">LLM</span>
+                                    <span class="blog__tag">Framework</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://medium.com/@to.adarshsingh" class="button button--secondary" target="_blank">
+                        <i class="fab fa-medium"></i> Read More on Medium
+                    </a>
+                    <a href="https://www.linkedin.com/in/adarshsinghdikhit/" class="button button--secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn Articles
+                    </a>
                 </div>
             </section>
             <!--========Certificate section-->
@@ -334,14 +1165,42 @@
             </section>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <p class="contact__description" data-aos="fade-up" data-aos-delay="100">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                </p>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <div class="contact__info" data-aos="fade-right">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">adarsh@example.com</span>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt contact__card-icon"></i>
+                            <h3 class="contact__card-title">Location</h3>
+                            <span class="contact__card-data">Bengaluru, Karnataka, India</span>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fas fa-phone contact__card-icon"></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <span class="contact__card-data">+91 [phone_number]</span>
+                        </div>
+                    </div>
+
+                    <form action="#" class="contact__form" data-aos="fade-left">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Your Name" class="contact__input" required>
+                            <input type="email" placeholder="Your Email" class="contact__input" required>
+                        </div>
+                        <input type="text" placeholder="Subject" class="contact__input" required>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input contact__textarea" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="contact__button button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </section>
@@ -355,14 +1214,26 @@
                 <a href="https://twitter.com/as_dikhit" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
             </div>
-            <p>&#169; 2022 copyright all right reserved</p>
+            <p>&#169; 2021-2026 copyright all right reserved</p>
         </footer>
 
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!-- AOS Animation Library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets\js\main.js"></script>
+        
+        <script>
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        </script>
     </body>
 </html>

@@ -231,8 +231,33 @@ img{
   top: 2rem;
   background-color: var(--first-color);
 }
-.nav__logo{
-  color: var(--second-color);
+.nav__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__logo-svg {
+  transition: all 0.3s ease;
+}
+
+.nav__logo-container:hover .nav__logo-svg {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.nav__logo-text {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0 0 20px rgba(64, 112, 244, 0.5);
+  transition: all 0.3s ease;
+}
+
+.nav__logo-container:hover .nav__logo-text {
+  color: #4070F4;
+  text-shadow: 0 0 25px rgba(64, 112, 244, 0.8);
 }
 .nav__toggle{
   color: var(--second-color);
@@ -1359,14 +1384,7 @@ html {
   transition: all 0.3s ease;
 }
 
-.nav__logo {
-  transition: all 0.3s ease;
-}
-
-.nav__logo:hover {
-  transform: scale(1.1);
-  color: var(--first-color);
-}
+/* Enhanced logo styling is now handled above */
 
 .nav__link {
   transition: all 0.3s ease;
